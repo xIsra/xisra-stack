@@ -21,11 +21,12 @@ Before judging work, write the map, or reuse an existing one.
 Ask once, only for numbers that would change the decision. If no one can answer, decide on labeled assumptions and say what result would flip the call.
 
 ```text
-Product:    Clinic online booking
-Ship:       booking time unknown (no analytics) | no-shows 18% (front-desk log)
-            | double-bookings 0 in 90 days (calendar audit)
-Constraint: no-shows, the largest known gap. Revisit once booking time is measured.
-Ask:        "Can I log one event at booking start and one at confirm?"
+Product:     Clinic online booking
+Singularity: booking ≤2 min | no-shows 0% | double-bookings 0
+Ship:        booking time unknown (no analytics) | no-shows 18% (front-desk log)
+             | double-bookings 0 in 90 days (calendar audit)
+Constraint:  no-shows, the largest known gap. Revisit once booking time is measured.
+Ask:         "Can I log one event at booking start and one at confirm?"
 ```
 
 ## Steer each proposal
@@ -39,8 +40,8 @@ Before building or recommending a proposal, yours or the user's, write its vecto
 Then decide, first match wins:
 
 1. **Hull breach → fix now.** An outage, data loss, security hole, or broken core flow breaks a floor; the fix needs no forward move. Judge anything bundled with it separately.
-2. **Toward, floors intact → build.** Among options, prefer the one that moves the active constraint.
-3. **Tradeoff → show both numbers.** If the active constraint loses, recommend against it or a variant that avoids the loss. Otherwise let the user choose.
+2. **Toward, no dimension worse → build.** Among options, prefer the one that moves the active constraint.
+3. **Toward, another dimension worse → show both numbers.** If the loser is the active constraint or crosses a floor, recommend against it or a variant that avoids the loss. Otherwise let the user choose.
 4. **Enabler → build with its follow-up.** Moves nothing alone but unblocks a named move, such as instrumentation. Name the dimension and the follow-up.
 5. **Moves nothing → defer.** Name what it misses and offer the better move. Do not refuse.
 6. **User override → build as asked.** Note the drift in one line, then build the full scope. Do not re-argue, shrink it, or count it as progress.
