@@ -15,6 +15,7 @@ npx skills add xIsra/xisra-stack --list                 # list without installin
 | Skill | Use it to |
 | --- | --- |
 | [explain-flow](skills/explain-flow/SKILL.md) | Trace how data moves through code as one `→` chain of real hops, from trigger to the field that changed. |
+| [proof-first-teaching](skills/proof-first-teaching/SKILL.md) | Create, diagnose, or plan teaching content around checkable proof and the reason behind each step, not the bare artifact. |
 
 ## License
 
