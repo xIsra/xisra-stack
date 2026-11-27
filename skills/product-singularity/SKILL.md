@@ -43,7 +43,7 @@ Then decide, first match wins:
 2. **Toward, no dimension worse → build.** Among options, prefer the one that moves the active constraint.
 3. **Toward, another dimension worse → show both numbers.** If the loser is the active constraint or crosses a floor, recommend against it or a variant that avoids the loss. Otherwise let the user choose.
 4. **Enabler → build with its follow-up.** Moves nothing alone but unblocks a named move, such as instrumentation. Name the dimension and the follow-up.
-5. **Moves nothing → defer.** Name what it misses and offer the better move. Do not refuse.
+5. **Moves nothing → defer.** Name what it misses and offer the better move with its signal. Do not refuse.
 6. **User override → build as asked.** Note the drift in one line, then build the full scope. Do not re-argue, shrink it, or count it as progress.
 
 After a change ships, check its signal and update the ship, or mark the move `unverified`. If the signal did not move, it was not progress.
@@ -67,7 +67,7 @@ Sailing closer reveals parameters you could not see from shore. Move the singula
 
 Test: would the evidence exist if the current work had never been built? If the only evidence is that the work falls short, it is not discovery. Keep the target and report the gap.
 
-On discovery, tell the user in one line, update the written map, and re-check decisions that relied on the old target. Never move it silently.
+On discovery, tell the user in one line, update the written map, and re-check decisions that relied on the old target. Never move it silently. If the user moves it without discovery, record it as their call with their reason.
 
 ```text
 Product:  Meal-kit delivery (on-time 100% | spoiled 0 | cook ≤30 min)
