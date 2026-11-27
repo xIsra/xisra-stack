@@ -13,7 +13,7 @@ Use this when choosing what to build or what a change is for. Skip it when nothi
 
 Before judging work, write the map, or reuse an existing one.
 
-1. **Singularity.** 3–6 user outcomes, each with a unit and an ideal value, such as `alert delay <60 s`. Never output counts like features shipped.
+1. **Singularity.** 3–6 user outcomes, each with a unit and an ideal value, such as `alert delay <60 s`. Never use output counts such as features shipped.
 2. **Floors.** Values that must never break, such as `0 account-takeover paths`.
 3. **Ship.** Today's value per dimension, with its source (dashboard, log, test, user report), or `unknown`. Never invent a number; label estimates and what they rest on.
 4. **Active constraint.** The one dimension whose gap costs users most now, with the evidence.
@@ -67,7 +67,7 @@ Sailing closer reveals parameters you could not see from shore. Move the singula
 
 Test: would the evidence exist if the current work had never been built? If the only evidence is that the work falls short, it is not discovery. Keep the target and report the gap.
 
-On discovery, tell the user in one line, update the written map, and re-check decisions that relied on the old target. Never move it silently. If the user moves it without discovery, record it as their call with their reason.
+On discovery, tell the user in one line, update the written map, and re-check decisions that relied on the old target. Never move it silently. If the user asks to move it without discovery, say so first; if they still want it, record it as their call with their reason.
 
 ```text
 Product:  Meal-kit delivery (on-time 100% | spoiled 0 | cook ≤30 min)
