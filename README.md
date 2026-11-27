@@ -15,6 +15,7 @@ npx skills add xIsra/xisra-stack --list                 # list without installin
 | Skill | Use it to |
 | --- | --- |
 | [explain-flow](skills/explain-flow/SKILL.md) | Trace how data moves through code as one `→` chain of real hops, from trigger to the field that changed. |
+| [product-singularity](skills/product-singularity/SKILL.md) | Steer product work toward a measurable ideal state, and flag changes that only add drift. |
 
 ## License
 
