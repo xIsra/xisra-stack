@@ -1,6 +1,6 @@
 ---
 name: explain-flow
-description: Explains how data moves through code as one arrow chain of real hops, from trigger to the field that changed. Use when asked how data gets from A to B, what happens after an upload, event, request, or schedule, or to trace a pipeline, queue, sync, or multi-service code path. Not for explaining a single function, an algorithm, or why a design was chosen.
+description: Use when you need to explain a complex flow or subject in a simple way.
 ---
 
 # Explain flow
